@@ -48,7 +48,7 @@ class SinglyLinkedList:
                 t1=t1.next
         if(t1.data == value):
             prev.next=None
-            
+
     def printLL(self):
         
         curr=self.head
@@ -63,6 +63,6 @@ obj.insert_at_End(300)
 obj.insert_at_End(600)
 obj.insert_at_start(400)
 obj.insert_at_middle(800,300)
-obj.deleteLL(400)
+obj.deleteLL(600)
 obj.printLL()
         
