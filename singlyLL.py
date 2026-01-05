@@ -24,6 +24,7 @@ class SinglyLinkedList:
         temp.next=self.head
         self.head=temp
         
+    def 
 
     def printLL(self):
         
