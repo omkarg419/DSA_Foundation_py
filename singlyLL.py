@@ -24,7 +24,27 @@ class SinglyLinkedList:
         temp.next=self.head
         self.head=temp
         
-    def 
+    def insert_at_middle(self,value, x):
+        temp=Node(value) 
+        t1=self.head
+
+        while(t1.next != None):
+            if(t1.data == x):
+                temp.next=t1.next
+                t1.next=temp
+            t1=t1.next
+           
+    def deleteLL(self,value):
+        t1=self.head
+        prev=t1
+
+        while(t1.next != None):
+            if(t1.data == value):
+                prev.next=t1.next
+                break
+            else:
+                prev=t1
+                t1=t1.next
 
     def printLL(self):
         
@@ -39,5 +59,7 @@ obj.insert_at_End(100)
 obj.insert_at_End(300)
 obj.insert_at_End(600)
 obj.insert_at_start(400)
+obj.insert_at_middle(800,300)
+obj.deleteLL(300)
 obj.printLL()
         
