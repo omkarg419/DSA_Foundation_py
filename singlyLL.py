@@ -18,6 +18,13 @@ class SinglyLinkedList:
         else:
             self.head=temp 
 
+    def insert_at_start(self,value):
+        temp=Node(value)
+        
+        temp.next=self.head
+        self.head=temp
+        
+
     def printLL(self):
         
         curr=self.head
@@ -30,6 +37,6 @@ obj = SinglyLinkedList()
 obj.insert_at_End(100)
 obj.insert_at_End(300)
 obj.insert_at_End(600)
-
+obj.insert_at_start(400)
 obj.printLL()
         
