@@ -22,7 +22,16 @@ class doublyLL:
     def printLL(self):
         curr=self.head
         while curr.next != None:
-            print(curr,end=" ")
+            print(curr.data)
+            curr=curr.next
+        print(curr.data)    
+        
 
+obj=doublyLL()
+obj.insertAtEnd(10)
+obj.insertAtEnd(20)
+obj.insertAtEnd(30)
+obj.insertAtEnd(40)
 
+obj.printLL()
         
