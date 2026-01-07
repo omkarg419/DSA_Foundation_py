@@ -34,6 +34,25 @@ class doublyLL:
         temp.next=self.head
         self.head=temp
 
+    def deleteLL(self,value):
+        if self.head == None:
+            print("linked list is empty")
+            return
+        t=self.head
+        if t.data == value:
+            self.head=t.next
+            self.head.prev=None
+            return
+        
+        while t.next != None:
+            if t.data == value:
+                t.prev.next=t.next
+                t.next.prev=t.prev
+                return
+            t=t.next
+        if t.data == value:
+            t.prev.next=None
+
     def insertAtMiddle(self,value,x):
         temp=Node(value)
         t1=self.head
@@ -60,7 +79,9 @@ obj.insertAtEnd(10)
 obj.insertAtEnd(20)
 obj.insertAtEnd(30)
 obj.insertAtEnd(40)
+obj.insertAtEnd(80)
 obj.insertionAtBegn(5)
 obj.insertAtMiddle(50,20)
+obj.deleteLL(80)
 obj.printLL()
         
