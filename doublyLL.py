@@ -23,10 +23,17 @@ class doublyLL:
         t.next=temp
         temp.prev=t
 
+    def insertionAtBegn(self,value):
+        temp=Node(value)
+
+        self.head.prev=temp
+        temp.next=self.head
+        self.head=temp
+
     def printLL(self):
         curr=self.head
         while curr.next != None:
-            print(curr.data,end="<--->")
+            print(curr.data,end=" <--> ")
             curr=curr.next
         print(curr.data)    
         
@@ -36,6 +43,6 @@ obj.insertAtEnd(10)
 obj.insertAtEnd(20)
 obj.insertAtEnd(30)
 obj.insertAtEnd(40)
-
+obj.insertionAtBegn(5)
 obj.printLL()
         
