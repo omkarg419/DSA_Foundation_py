@@ -21,5 +21,8 @@ class doublyLL:
 
     def printLL(self):
         curr=self.head
-        
+        while curr.next != None:
+            print(curr,end=" ")
+
+
         
