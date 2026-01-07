@@ -14,15 +14,19 @@ class doublyLL:
         if self.head == None:
             self.head= temp
             return
+        
+
         t=self.head
         while t.next != None:
-            t.next=temp
-            temp.prev=t
+            t= t.next
+
+        t.next=temp
+        temp.prev=t
 
     def printLL(self):
         curr=self.head
         while curr.next != None:
-            print(curr.data)
+            print(curr.data,end="<--->")
             curr=curr.next
         print(curr.data)    
         
