@@ -7,22 +7,22 @@ class stack:
         return len(self.s)
     
     def Push(self,value):
-        # self.s.insert(0,value)
-        self.s.append(value)
+        self.s.insert(0,value)
+        # self.s.append(value)
 
     def Peek(self):
         if len(self.s) == 0:
             raise Exception("Empty Stack")
         else:
-            # return self.s[0]
-            return self.s[-1]
+            return self.s[0]
+            # return self.s[-1]
     
     def Pop(self):
          if len(self.s) == 0:
             raise Exception("Empty Stack")
          else:
-            # return self.s.pop(0)
-            return self.s.pop()
+            return self.s.pop(0)
+            # return self.s.pop()
          
 
 stk =stack()
