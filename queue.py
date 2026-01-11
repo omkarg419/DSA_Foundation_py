@@ -15,4 +15,17 @@ class Queue:
             return self.item.pop(0)    
 
 
+Q=Queue()
+
+Q.insert(10)
+Q.insert(20)
+Q.insert(30)
+Q.insert(40)
+
+print(Q.delete())
+print(Q.delete())
+print(Q.delete())
+print(Q.delete())
+print(Q.delete())
+
         
