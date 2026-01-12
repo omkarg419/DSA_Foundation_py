@@ -30,3 +30,7 @@ D.insertAtBeg(30)
 D.insertAtBeg(40)
 
 print(D.deleteATFornt())
+print(D.deleteAtReare())
+print(D.deleteATFornt())
+print(D.deleteAtReare())
+print(D.deleteATFornt())
