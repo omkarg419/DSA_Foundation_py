@@ -10,3 +10,15 @@ class Deque:
     
     def insertAtBeg(self,value):
         self.item.insert(0,value)
+    
+    def deleteATFornt(self):
+        if(self.isEmpty):
+            print(" Deque is empty")
+        else:
+            return self.item.pop(0)
+    
+    def deleteAtReare(self):
+        if(self.isEmpty):
+            print(" Deque is empty")
+        else:
+            return self.item.pop()
