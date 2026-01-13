@@ -26,7 +26,7 @@ class CirculerQueue:
             print(self.item[self.front])
             self.front=(self.front +1) % self.size
 
-CQ=CirculerQueue()
+CQ = CirculerQueue(4)
 
 CQ.enqueue(10)
 CQ.enqueue(20)
