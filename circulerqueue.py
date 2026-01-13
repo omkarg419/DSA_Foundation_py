@@ -15,6 +15,24 @@ class CirculerQueue:
             self.rear=(self.rear +1) % self.size
             self.item[self.rear]=value
 
+    def dequeue(self):
+
+        if self.front == -1:
+            print("Queue is empty")
+        elif self.front == self.rear:
+            print(self.item[self.front])
+            self.front=self.rear=-1
+        else:
+            print(self.item[self.front])
+            self.front=(self.front +1) % self.size
+
+CQ=CirculerQueue()
+
+CQ.enqueue(10)
+CQ.enqueue(20)
+CQ.enqueue(30)
+CQ.enqueue(40)
+
    
 
 
