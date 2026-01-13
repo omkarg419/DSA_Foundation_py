@@ -6,7 +6,7 @@ class CirculerQueue:
         self.front=self.rear=-1
     
     def enqueue(self,value):
-        if((self.rear + 1) % self.front):
+        if((self.rear + 1) == self.front):
             print("Queue is Full")
         elif self.front == -1:
             self.front=self.rear=0
