@@ -7,8 +7,8 @@ class stack:
         return len(self.s)
     
     def Push(self,value):
-        self.s.insert(0,value)
-        # self.s.append(value)
+        # self.s.insert(0,value)
+        self.s.append(value)
 
     def Peek(self):
         if len(self.s) == 0:
