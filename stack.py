@@ -21,8 +21,8 @@ class stack:
          if len(self.s) == 0:
             raise Exception("Empty Stack")
          else:
-            return self.s.pop(0)
-            # return self.s.pop()
+            # return self.s.pop(0)
+            return self.s.pop()
          
 
 stk =stack()
