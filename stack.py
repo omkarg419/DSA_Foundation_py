@@ -14,8 +14,8 @@ class stack:
         if len(self.s) == 0:
             raise Exception("Empty Stack")
         else:
-            return self.s[0]
-            # return self.s[-1]
+            # return self.s[0]
+            return self.s[-1]
     
     def Pop(self):
          if len(self.s) == 0:
