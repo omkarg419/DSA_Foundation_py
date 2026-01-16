@@ -10,6 +10,13 @@ def preOrder(root):
         preOrder(root.left)
         preOrder(root.right)
 
+def InOrder(root):
+    if root!= None:
+        
+        preOrder(root.left)
+        print(root.data, end=" -> ")
+        preOrder(root.right)
+
 root=Node(1)
 root.left=Node(3)
 root.right=Node(5)
