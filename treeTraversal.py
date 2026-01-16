@@ -13,15 +13,15 @@ def preOrder(root):
 def InOrder(root):
     if root!= None:
         
-        preOrder(root.left)
+        InOrder(root.left)
         print(root.data, end=" -> ")
-        preOrder(root.right)
+        InOrder(root.right)
 
 def PostOrder(root):
     if root!= None:
         
-        preOrder(root.left) 
-        preOrder(root.right)
+        PostOrder(root.left) 
+        PostOrder(root.right)
         print(root.data, end=" -> ")
 
 
