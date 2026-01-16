@@ -17,6 +17,14 @@ def InOrder(root):
         print(root.data, end=" -> ")
         preOrder(root.right)
 
+def PostOrder(root):
+    if root!= None:
+        
+        preOrder(root.left) 
+        preOrder(root.right)
+        print(root.data, end=" -> ")
+
+
 root=Node(1)
 root.left=Node(3)
 root.right=Node(5)
@@ -25,3 +33,5 @@ root.left.right=Node(4)
 root.right.right=Node(8)
 
 preOrder(root)
+InOrder(root)
+PostOrder(root)
