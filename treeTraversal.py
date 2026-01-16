@@ -6,7 +6,7 @@ class Node:
 
 def preOrder(root):
     if root!= None:
-        print("PreOrder: ",root.data, end=" -> ")
+        print(root.data, end=" -> ")
         preOrder(root.left)
         preOrder(root.right)
 
