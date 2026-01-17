@@ -14,6 +14,17 @@ def insert(root,value):
     else:
         root.right=insert(root.right,value)
     return root
+
+def search(root,value):
+    if root == None:
+        print("element not found")
+    if root.data == value:
+        print("Element found",root)
+    if root.data > value:
+        search(root.left,value)
+    else:
+        search(root.right,value)
+    
         
 def InOrder(root):
     if root != None:    
