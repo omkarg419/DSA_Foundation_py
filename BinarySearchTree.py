@@ -21,3 +21,12 @@ def InOrder(root):
         print(root.data, end=" ")
         InOrder(root.right)
 
+root=insert(None,20)
+root=insert(root,30)
+root=insert(root,10)
+root=insert(root,15)
+root=insert(root,50)
+root=insert(root,90)
+root=insert(root,18)
+
+InOrder(root)
