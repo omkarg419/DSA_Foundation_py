@@ -15,3 +15,9 @@ def insert(root,value):
         root.right=insert(root.right,value)
     return root
         
+def InOrder(root):
+    if root != None:    
+        InOrder(root.left)
+        print(root.data, end=" ")
+        InOrder(root.right)
+
