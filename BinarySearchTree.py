@@ -29,7 +29,7 @@ def search(root,value):
 
 def get_successor(root):
     root=root.right
-    while(root != None and root.next != None):
+    while(root != None and root.left != None):
         root=root.left
     return root
 
@@ -38,7 +38,7 @@ def delete(root,value):
         return root
     if root.data>value:
         root.left=delete(root.left,value)
-    if root.data<value:
+    elif root.data<value:
         root.right=delete(root.right,value)
 
     else:
@@ -49,7 +49,7 @@ def delete(root,value):
         else:
             succ=get_successor(root)
             root.data=succ.data
-            root.left=delete(root.right,succ.data)
+            root.right=delete(root.right,succ.data)
     return root
 
 
@@ -61,15 +61,15 @@ def InOrder(root):
         InOrder(root.right)
 
 root=insert(None,20)
-root=insert(root,30)
-root=insert(root,10)
 root=insert(root,15)
-root=insert(root,50)
-root=insert(root,90)
+root=insert(root,30)
+root=insert(root,40)
+root=insert(root,12)
 root=insert(root,18)
+root=insert(root,25)
+root=insert(root,50)
 
 InOrder(root)
-search(root,90)
-search(root,5)
-delete(root,18)
+delete(root,20)
+print("\n")
 InOrder(root)
