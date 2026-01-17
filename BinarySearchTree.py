@@ -17,10 +17,10 @@ def insert(root,value):
 
 def search(root,value):
     if root == None:
-        print("element not found", end="\n")
+        print("element not found: ",value, end="\n")
         return
     if root.data == value:
-        print("Element found",root ,end="\n")
+        print("Element found: ",root.data ,end="\n")
         return
     if root.data > value:
         search(root.left,value)
