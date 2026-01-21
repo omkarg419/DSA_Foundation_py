@@ -5,4 +5,4 @@ def fect (n):
     else:
         return n * fect(n - 1)
 
-print(fect(5))  # Output: 120
+print(fect(5))  
